@@ -1,25 +1,7 @@
 import re
 
 def validate_cpf(data_cpf):
-    """Validate CPF function.
 
-    Args: CPF to validate.
-
-            # Entradas Incorretas:
-             - 'abcdefghijk'
-             - '123'
-             - ''
-             - None
-             - '12345678900'
-
-            # Entradas Corretas:
-             - '95524361503'
-             - '955.243.615-03'
-             - 955 243 615 03'
-
-    Returns:
-        bool: Retorna True quando CPF é válido senão retorna False.
-    """
     cpf = ''.join(re.findall('\d', str(data_cpf)))
 
     if (not cpf) or (len(cpf) < 11):
