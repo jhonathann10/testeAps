@@ -1,6 +1,5 @@
 import re
 import pandas as pd
-import numpy as np
 
 def validate_cpf(data_cpf):
 
