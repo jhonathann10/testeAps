@@ -1,4 +1,6 @@
 import re
+import pandas as pd
+import numpy as np
 
 def validate_cpf(data_cpf):
 
@@ -23,4 +25,9 @@ def validate_cpf(data_cpf):
         return True
     return False
 
-print(validate_cpf('26857885222'))
+df = pd.read_csv("base_teste.txt")
+tam_lista = len(df)
+for i in df:
+    df['cpf_valido'] = df['cpf'].apply(validate_cpf)
+
+print(df)
