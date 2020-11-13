@@ -7,7 +7,6 @@ def validate_cpf(data_cpf):
     if (not cpf) or (len(cpf) < 11):
         return False
 
-    # Gera últimos dois dígitos baseado nos primeiros nove.
     integers = list(map(int, cpf))
     new_value = integers[:9]
 
@@ -20,7 +19,6 @@ def validate_cpf(data_cpf):
             f = 0
         new_value.append(f)
 
-    # Se o número gerado é igual aos inteiros retorna True.
     if new_value == integers:
         return True
     return False
