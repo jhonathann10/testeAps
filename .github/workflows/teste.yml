@@ -5,5 +5,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
     - uses: actions/checkout@v2
-    - name: Run a one-line script
-      run: python3 main.py
+    - name: run pip install requeriments
+      run: pip install -r requeriments.txt
+    - name: run main script
+      run: python main.py
