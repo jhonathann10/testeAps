@@ -23,4 +23,4 @@ def validate_cpf(data_cpf):
         return True
     return False
 
-print(validate_cpf('123451231231'))
+print(validate_cpf('114.103.319-46'))
