@@ -1,6 +1,6 @@
 import re
 
-def validate_cpf(data_cpf) -> bool:
+def validate_cpf(data_cpf):
     """Validate CPF function.
 
     Args: CPF to validate.
