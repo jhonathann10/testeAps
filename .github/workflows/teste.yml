@@ -5,5 +5,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
     - uses: actions/checkout@v2
+    - name: run pip install
+      run: pip install -r requeriments.txt
     - name: run main script
       run: python main.py
