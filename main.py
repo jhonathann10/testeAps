@@ -29,4 +29,4 @@ tam_lista = len(df)
 for i in df:
     df['cpf_valido'] = df['cpf'].apply(validate_cpf)
 
-print(df)
+print(f"DataFrame: {df}")
